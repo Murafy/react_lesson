@@ -4,7 +4,9 @@ function Calculate () {
     const [value1, setValue1] = useState('')
     const [value2, setValue2] = useState('')
     const [result, setResult] = useState('')
-    
+//useState함수로 만들어진 상태변수는 값이 바뀔 때마다
+//모든 변수값이 새로 계산되고 그 값으로 재렌더링 함 
+//단, 상태 변수는 이전 값(상태)는 유지됨
     const handleAdd = ()=> {
         setResult(Number(value1) + Number(value2))
     }
