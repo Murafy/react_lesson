@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+</style>
+</head>
+<body>
+    
+        <div id=button>
+            <button onclick="HeightUp()">height up</button>
+            <button onclick="HeightDown()">height down</button>
+            <button onclick="WidthUp()">Width up</button>
+            <button onclick="WidthDown()">Width Down</button>
+        </div>
+
+    <div id="container">
+        <div id="box">
+
+        </div>
+
+        <script>
+            function WidthUp () {
+              document.getElementById("box")
+                box.style.width = (box.offsetWidth + 20) + 'px'
+            }
+
+            function WidthDown () {
+              document.getElementById("box")
+                box.style.width = (box.offsetWidth - 20) + 'px'
+            }
+
+            function HeightUp () {
+              document.getElementById("box")
+                box.style.height = (box.offsetHeight + 20) + 'px'            
+            }
+
+            function HeightDown () {
+              document.getElementById("box")
+                box.style.height = (box.offsetHeight - 20) + 'px'            
+            }
+        </script>
+        
+    </div>
+</body>
+</html>

@@ -1,11 +1,12 @@
 import React from 'react';
-import Box from './component/Box';
 import './App.css'
+import BoxReducer from './component/BoxReducer';
+import Calculate from './component/CalculateReducer';
 
 function App(props) {
     return (
         <div>
-            <Box/>
+            <Calculate/>
         </div>
     );
 }

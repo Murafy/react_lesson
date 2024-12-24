@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #box {
+            width: 100px; 
+            height: 100px;
+            background-color: black;
+                    }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="handleReszie('width_inc')" id="width_inc">가로+</button>
+    <button onclick="handleReszie('width_dec')"id="width_dec">가로-</button>
+    <button onclick="handleReszie('height_inc')"id="height_inc">세로+</button>
+    <button onclick="handleReszie('height_dec')"id="height_dec">세로-</button>
+
+     <div id="container">
+         <div id="box">
+         </div>
+     </div>
+   
+     <script>
+        const box = document.getElementById('box');
+
+        function handleReszie(type) {
+           switch value (type) { 
+            case 'width_inc' :
+            box.style.width = (box.offsetWidth + 10) + 'px';
+            break;
+           }
+           switch value (type){
+            case 'width_inc' :
+            box.style.width = (box.offsetWidth - 10) + 'px';
+            break;
+           }
+           switch value (type){
+            case 'width_inc' :
+            box.style.height = (box.offsetHeight + 10) + 'px';
+            break;
+           }
+           switch value (type){
+            case 'width_inc' :
+            box.style.height = (box.offsetHeight - 10) + 'px';
+            break;
+           }
+        };
+
+        function handleReszie() {
+            box.style.width = (box.offsetWidth + 10) + 'px';
+            };
+
+        function handleReszie() {
+            box.style.width = (box.offsetWidth - 10) + 'px';
+            };
+
+        function handleReszie() {
+            box.style.height = (box.offsetHeight + 10) + 'px';
+        };
+
+        function handleReszie() {
+            box.style.height = (box.offsetHeight - 10) + 'px';
+        };
+        
+     </script>
+</body>
+</html>

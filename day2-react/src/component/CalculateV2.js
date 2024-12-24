@@ -9,7 +9,7 @@ function CalculateV2() {
   const [result, setResult] = useState(0)
   
   // 상태 변수 username 또는 nickname 값이 변경되면 리렌더링.콘솔 출력
-  console.log('리렌더링',first, second)
+  console.log('CalculateV2 리렌더링',first, second)
 
   // OK 버튼 이벤트
   const handleCalculate = (e) => {
